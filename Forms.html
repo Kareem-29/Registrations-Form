@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+
+
+    <body>
+        <h1><strong>Co-op Registration Form</strong></h1>
+        <p><em>This form is required to be completed by all students planning to take Co-op Training in the summer for 2019</em></p>
+        <form action="" method="">
+            <fieldset>
+                <legend>Student information</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="fname">Full Name*</label></td>
+                            <td><input type="text" id="fname" name="fname" required></td>      
+                        </tr>
+
+                        <tr>
+                            <td><label for="gender">Gender*</label></td>
+                            <td><input type="radio" id="gender" name="gender" value="Male" required> Male
+                                <input type="radio" id="gender" name="gender" value="Female" required> Female</td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="YoS">Year of Study*</label></td>
+                            <td>
+                                1<input type="range" id="Yos" name="YoS" required 
+                                min="1" 
+                                max="4" 
+                                step="1" 
+                                value="3">4
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="LoS">Level of Study*</label></td>
+                            <td><input type="number" id="LoS" name="Los" min="1" max="8" step="1" value="6"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="gpa">GPA (Range)*</label></td>
+                            <td><select name="gpa" id="gpa" required>
+                            <option value="0-1">Less than 1.0</option>
+                            <option value="1-2">1.0 - 2.0</option>
+                            <option value="2-3">2.0 - 3.0</option>
+                            <option value="3-4" selected>3.0 - 4.0</option>
+                            <option value="4-5">More than 4.0</option></select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="email">Email Address*</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Pre-requiste Information</legend>
+                <p>Courses Completed:</p>
+                <p><strong><em>Please select all courses you have completed</em></strong></p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" value="DCAD"> Database Concepts and Design</td>
+                            <td><input type="checkbox" value="DS"> Data Structure</td>
+                            <td><input type="checkbox" value="PR"> Professional Responsbility</td>
+                            <td><input type="checkbox" value="TR"> Technical Reports</td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox" value="WBS"> Web-Based Systems</td>
+                            <td><input type="checkbox" value="HCI"> Human-Computer Interaction</td>
+                            <td><input type="checkbox" value="SE"> Software Engineering</td>
+                            <td><input type="checkbox" value="SAAD"> System Analysis and Design</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Training Organization Information</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="Cname">Company Name*</label></td>
+                            <td><input type="text" name="Cname" id="Cname" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="TSD">Training Start Date*</label></td>
+                            <td><input type="date" id="TSD" name="TSD" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="TED">Training End Date*</label></td>
+                            <td><input type="date" id="TED" name="TED" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="WHAC">Working Hours at the company*</label></td>
+                            <td><input type="time" id="WHAC" name="WHAC" required> - <input type="time" id="WHAC" name="WHAC" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Attachments</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="Transcript">Transcript*</label></td>
+                            <td><input type="file" id="Transcript" name="Transcript" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="SAL">Student Advisor Letter*</label></td>
+                            <td><input type="file" id="SAL" name="SAL" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea name="comments" id="comments" cols="70" rows="7" 
+                placeholder="Enter any comments here for the Co-op Committe"></textarea>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Submit Application" name="Submit Application">
+            <input type="reset" value="Clear" name="Clear">
+        </form>
+    </body>
+</html>
